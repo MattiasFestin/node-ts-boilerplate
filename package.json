@@ -4,8 +4,8 @@
   "description": "A TS node boilerplate project",
   "main": "build/src/Main.js",
   "scripts": {
-    "test": "node --harmony node_modules/.bin/ava build/tests/*.js",
-    "watch:test": "node --harmony_destructuring node_modules/.bin/ava --watch build/tests/*.js"
+    "test": "node --harmony node_modules/ava/cli.js build/tests/*.js",
+    "watch:test": "node --harmony node_modules/ava/cli.js --watch build/tests/*.js"
   },
   "author": "Mattias Festin",
   "license": "ISC",
