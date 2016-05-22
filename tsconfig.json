@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "module": "commonjs",
+        "outDir": "./build",
+        "watch": true,
+        "target": "es6"
+    }
+}

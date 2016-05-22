@@ -1,0 +1,15 @@
+{
+  "name": "node-boilerplate",
+  "version": "1.0.0",
+  "description": "A TS node boilerplate project",
+  "main": "build/src/Main.js",
+  "scripts": {
+    "test": "node --harmony node_modules/.bin/ava build/tests/*.js",
+    "watch:test": "node --harmony_destructuring node_modules/.bin/ava --watch build/tests/*.js"
+  },
+  "author": "Mattias Festin",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.14.0"
+  }
+}
