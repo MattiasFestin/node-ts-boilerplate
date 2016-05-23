@@ -4,12 +4,13 @@
   "description": "A TS node boilerplate project",
   "main": "build/src/Main.js",
   "scripts": {
-    "test": "node --harmony node_modules/ava/cli.js build/tests/*.js",
-    "watch:test": "node --harmony node_modules/ava/cli.js --watch build/tests/*.js"
+    "test": "nyc --check-coverage --lines 100 ava build/tests/*.js",
+    "watch:test": "nyc ava --watch build/tests/*.js"
   },
   "author": "Mattias Festin",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.14.0"
+    "ava": "^0.14.0",
+    "nyc": "^6.4.4"
   }
 }
