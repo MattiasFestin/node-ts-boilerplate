@@ -5,13 +5,14 @@
   "main": "build/src/Main.js",
   "scripts": {
     "test": "nyc --check-coverage --lines 100 ava build/tests/*.js",
-    "watch:test": "nyc ava --watch build/tests/*.js",
+    "watch:test": "nodemon --watch ./build/src --watch ./build/test --exec \"npm\" test",
     "doc": "typedoc --module commonjs --out ./build/doc/ ./src/Main.ts"
   },
   "author": "Mattias Festin",
   "license": "ISC",
   "devDependencies": {
     "ava": "^0.14.0",
+    "nodemon": "^1.9.2",
     "nyc": "^6.4.4",
     "typedoc": "^0.3.12"
   }
