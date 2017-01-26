@@ -12,13 +12,13 @@
   "author": "Mattias Festin",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^0.16.0",
-    "lodash": "^4.15.0",
-    "nodemon": "^1.10.0",
-    "nyc": "^8.1.0",
-    "tap-diff": "^0.1.1",
-    "tap-notify": "^1.0.0",
-    "tap-spec": "^4.1.1",
-    "typedoc": "^0.4.4"
+    "ava": "^0.17.x",
+    "lodash": "^4.17.x",
+    "nodemon": "^1.11.x",
+    "nyc": "^10.1.x",
+    "tap-diff": "^0.1.x",
+    "tap-notify": "^1.0.x",
+    "tap-spec": "^4.1.x",
+    "typedoc": "^0.5.x"
   }
 }
