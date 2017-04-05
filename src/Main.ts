@@ -15,7 +15,9 @@ export const foo = 123;
  */
 export const bar = 123;
 
-console.log(foo);
+//console.log(foo);
+
+export const bla = 3.1415;
 
 /**
  * This is a doc comment for "someVar".
