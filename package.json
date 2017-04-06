@@ -7,7 +7,8 @@
     "test:CI": "tsc && nyc --reporter=text-lcov --exclude 'build/tests/*.js' --exclude 'node_modules/' --check-coverage --lines 100 --functions 100 --branches 100 ava build/tests/*.js",
     "test": "nyc --cache --exclude 'build/tests/*.js' --exclude 'node_modules/' --check-coverage --lines 100 --functions 100 --branches 100 ava --tap build/tests/*.js | tap-notify | tap-diff",
     "test:watch": "nodemon --watch ./build -x 'npm test'",
-    "doc": "typedoc --module commonjs --out ./build/doc/ ./src/Main.ts"
+    "doc": "typedoc --module commonjs --out ./build/doc/ ./src/Main.ts",
+    "compile": "tsc > tsc.out 2> tsc.err &"
   },
   "author": "Mattias Festin",
   "license": "ISC",
